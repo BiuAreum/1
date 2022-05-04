@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Check whether it is possible to replace $ in a specified expression</title>
+</head>
+<body>
+  <p id= "Rezolvare2"> x $ y = z </p>
+  <script type = "text/javascript">
+    function P2() {
+      var x = parseFloat(prompt('x= '));
+      var y = parseFloat(prompt('y= '));
+      var z = parseFloat(prompt('z= '));
+
+      if (x + y == z) {
+        document.getElementById("Rezolvare2") = + x +"+"+ y +"=" + z;   
+      }
+
+      else if (x - y == z) {
+        document.getElementById("Rezolvare2") = + x +"-"+ y +"=" + z;
+      }
+
+      else if (x / y == z) {
+        document.getElementById("Rezolvare2") = + x +"/"+ y +"=" + z;
+      }
+
+      else if (x * y == z) {
+        document.getElementById("Rezolvare2") = + x +"*"+ y +"=" + z;
+      }
+
+      else {
+        document.getElementById("Rezolvare2") = "Nu exista o operatie adevarata";
+      }
+      
+    }
+</script>
+</body>
+</html>
+
+<button type= "button" onclick="P2()">P2</button>
